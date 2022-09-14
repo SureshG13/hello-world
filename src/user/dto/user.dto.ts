@@ -10,3 +10,24 @@ export class UserDto {
     @IsString()
     password: string;
 }
+
+export class AutherDto{
+    @IsNumber()
+    authorId: number;
+
+    @IsString()
+    authorName: string;
+
+    @IsString()
+    quote: string;
+}
+
+export class ImageDto{
+    @IsNumber()
+    userId: number;
+
+    @IsString()
+    userName: string;
+
+    imageFile: Uint8Array;
+}
